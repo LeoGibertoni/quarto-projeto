@@ -1,0 +1,39 @@
+input {
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+}
+button {
+  margin-left: 10px;
+}
+
+.container{
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+}
+
+#timer{
+  text-align: center;
+  font-size: 35px;
+}
+
+.controls{
+  text-align: center;
+}
+.controls button{
+  background-color: black;
+  border: 0px;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.session-info{
+  margin-top: 10px;
+}

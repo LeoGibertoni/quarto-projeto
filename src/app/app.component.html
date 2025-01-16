@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Pomodoro Timer</h1>
+  <div class="timer" id="timer">{{ timerDisplay }}</div>
+  <div class="controls">
+    <button (click)="addFiveMinutes()">+5 Min</button>
+    <button (click)="startTimer()" [disabled]="isRunning">Start</button>
+    <button (click)="pauseTimer()" [disabled]="!isRunning">Pause</button>
+    <button (click)="resumeTimer()" [disabled]="!isPaused">Resume</button>
+    <button (click)="resetTimer()">Reset</button>
+    <button (click)="removeFiveMinutes()">-5 Min</button>
+  </div>
+  <div class="session-info">Seção: {{ currentSession }}</div>
+  <div class="session-count">Seções de trabalho concluidas: {{ workSessions }}</div>
+  <audio #alarmSound src="assets/alarm.mp3" preload="auto"></audio>
+</div>
