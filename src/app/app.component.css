@@ -3,24 +3,31 @@ input {
   padding: 5px;
   border-radius: 5px;
 }
-button {
-  margin-left: 10px;
-}
 
 .container{
-  width: 500px;
+  background-color: black;
+  width: 800px;
   border: 2px solid black;
   border-radius: 5px;
   margin: auto;
 }
 
 h1{
+  color: white;
   text-align: center;
 }
 
 #timer{
+  color: white;
   text-align: center;
-  font-size: 35px;
+  font-size: 150px;
+  margin-bottom: 0px;
+  margin-top: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+hr{
+  margin-top: 0px;
+  width: 200px;
 }
 
 .controls{
@@ -29,11 +36,34 @@ h1{
 .controls button{
   background-color: black;
   border: 0px;
-  color: white;
+  color: rgb(158, 157, 157);
   font-size: 20px;
   margin-top: 5px;
 }
+.controls button:hover{
+  transform: scale(0.9);
+  color: white;
+}
+.controls button:active{
+  color: black;
+  background-color: darkgray;
+}
 
 .session-info{
+  color: white;
   margin-top: 10px;
+  margin-left: 5px
+}
+.session-count{
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.buttonstart{
+  margin-top: 20px;
+}
+
+.buttonstart button{
+  color: rgb(155, 154, 154);
+  background: rgb(68, 68, 68);
 }
