@@ -49,7 +49,7 @@ export class AppComponent {
         this.timerDisplay = this.formatTime(this.timeLeft);
       } else {
         clearInterval(this.timer);
-        this.alarmSound.nativeElement.play(); 
+        this.alarmSound.nativeElement.play();   
         this.handleSessionSwitch();
       }
     }, 1000);
