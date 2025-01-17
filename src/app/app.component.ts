@@ -49,7 +49,7 @@ export class AppComponent {
         this.timerDisplay = this.formatTime(this.timeLeft);
       } else {
         clearInterval(this.timer);
-        this.alarmSound.nativeElement.play(); // Reproduz o som
+        this.alarmSound.nativeElement.play(); 
         this.handleSessionSwitch();
       }
     }, 1000);
@@ -77,14 +77,14 @@ export class AppComponent {
 
   handleSessionSwitch() {
     if (this.currentSession === 'Trabalho') {
-      this.workSessions++; // Incrementa a sessão de trabalho
+      this.workSessions++;
       console.log('Work session completed. Total:', this.workSessions);
 
       if (this.workSessions % 4 === 0) {
-        this.currentSession = 'Pausa Longa'; // A cada 4 sessões de trabalho, vai para a pausa longa
+        this.currentSession = 'Pausa Longa';
         this.timeLeft = this.longBreak;
       } else {
-        this.currentSession = 'Pausa Pequena'; // Caso contrário, vai para a pausa curta
+        this.currentSession = 'Pausa Pequena';
         this.timeLeft = this.shortBreak;
       }
     } else {
